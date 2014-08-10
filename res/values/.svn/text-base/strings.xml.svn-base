@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PArm</string>
+    <string name="action_settings">Settings</string>
+    <string name="Name">Имя</string>
+    <string name="Password">Пароль</string>
+    <string name="PPR">ППР</string>
+    <string name="Server">Сервер</string>
+    <string name="ChagePassword">Сменить пароль</string>
+    <string name="Ok">Войти</string>
+    <string name="Cancel">Отмена</string>
+    <string name="TypeTr">Тип транспорта</string>
+    
+
+</resources>

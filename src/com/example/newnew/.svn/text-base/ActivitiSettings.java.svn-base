@@ -1,0 +1,244 @@
+package com.example.newnew;
+
+import android.app.Activity;
+import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.Window;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemSelectedListener;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.Spinner;
+import android.widget.TextView;
+
+public class ActivitiSettings extends Activity implements OnClickListener {
+	TextView textAnsver;
+	Singleton ms;
+	Button btnOk;
+	Button BtnCnsl;
+	Button btninit;
+	SharedPreferences sPref;
+
+	Spinner spinner;
+	Spinner spinner2;
+	Spinner spinner3;
+	Spinner spinner4;
+	Spinner spinner5;
+	Spinner spinner8;
+	Spinner spinner10;
+	Spinner spinner11;
+	Spinner spinner12;
+	Spinner spinner13;
+	Spinner spinner14;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+		setContentView(R.layout.settings);
+		ms = Singleton.getInstance();
+
+		btnOk = (Button) findViewById(R.id.btn2);
+		btnOk.setOnClickListener(this);
+		BtnCnsl = (Button) findViewById(R.id.btn3);
+		BtnCnsl.setOnClickListener(this);
+		btninit = (Button) findViewById(R.id.btn1);
+		btninit.setEnabled(false);
+
+		sPref = getSharedPreferences("ParmSettings", MODE_PRIVATE);
+
+		// адаптер
+		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+				R.layout.sss, ms.getTypeAuto()[1]);
+		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		spinner = (Spinner) findViewById(R.id.spinner1);
+		spinner.setAdapter(adapter);
+		spinner.setSelection(sPref.getInt("TYPE_AUTO", 0));
+		spinner.setPrompt("Тип транспорта");
+
+		ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this,
+				R.layout.sss, ms.getVector()[1]);
+		adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		spinner2 = (Spinner) findViewById(R.id.spinner2);
+		spinner2.setAdapter(adapter2);
+		spinner2.setSelection(sPref.getInt("VECTOR", 0));
+		spinner2.setPrompt("Направление");
+
+		ArrayAdapter<String> adapter4 = new ArrayAdapter<String>(this,
+				R.layout.sss, ms.getCountry()[1]);
+		adapter4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		spinner4 = (Spinner) findViewById(R.id.spinner4);
+		spinner4.setAdapter(adapter4);
+		spinner4.setSelection(sPref.getInt("COUNTRY", 0));
+		spinner4.setPrompt("Страна въезда/выезда");
+		spinner4.setOnItemSelectedListener(new OnItemSelectedListener() {
+
+			@Override
+			public void onItemSelected(AdapterView<?> arg0, View arg1,
+					int arg2, long arg3) {
+				spinner3.setSelection(arg2);
+			}
+
+			@Override
+			public void onNothingSelected(AdapterView<?> arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+		});
+
+		ArrayAdapter<String> adapter3 = new ArrayAdapter<String>(this,
+				R.layout.sss, ms.getCountry()[2]);
+		adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		spinner3 = (Spinner) findViewById(R.id.spinner3);
+		spinner3.setAdapter(adapter3);
+		spinner3.setSelection(sPref.getInt("COUNTRY", 0));
+		spinner3.setPrompt("Страна въезда/выезда");
+		spinner3.setOnItemSelectedListener(new OnItemSelectedListener() {
+
+			@Override
+			public void onItemSelected(AdapterView<?> arg0, View arg1,
+					int arg2, long arg3) {
+				spinner4.setSelection(arg2);
+				
+			}
+
+			@Override
+			public void onNothingSelected(AdapterView<?> arg0) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
+
+		ArrayAdapter<String> adapter5 = new ArrayAdapter<String>(this,
+				R.layout.sss, ms.getTarget()[1]);
+		adapter5.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		spinner5 = (Spinner) findViewById(R.id.spinner6);
+		spinner5.setAdapter(adapter5);
+		spinner5.setSelection(sPref.getInt("TARGET", 0));
+		spinner5.setPrompt("Цель поездки");
+
+		ArrayAdapter<String> adapter8 = new ArrayAdapter<String>(this,
+				R.layout.sss, ms.getTypeDocument()[1]);
+		adapter8.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		spinner8 = (Spinner) findViewById(R.id.spinner8);
+		spinner8.setAdapter(adapter8);
+		spinner8.setSelection(sPref.getInt("TYPE_DOCUMENT", 0));
+		spinner8.setPrompt("Тип доп. документа");
+
+		ArrayAdapter<String> adapter10 = new ArrayAdapter<String>(this,
+				R.layout.sss, ms.getTypeVisa()[1]);
+		adapter10
+				.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		spinner10 = (Spinner) findViewById(R.id.spinner10);
+		spinner10.setAdapter(adapter10);
+		spinner10.setSelection(sPref.getInt("TYPE_VISA", 0));
+		spinner10.setPrompt("Тип Визы");
+
+		ArrayAdapter<String> adapter11 = new ArrayAdapter<String>(this,
+				R.layout.sss, ms.getKindVisa()[1]);
+		adapter11
+				.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		spinner11 = (Spinner) findViewById(R.id.spinner11);
+		spinner11.setAdapter(adapter11);
+		spinner11.setSelection(sPref.getInt("KIND_VISA", 0));
+		spinner11.setPrompt("Вид Визы");
+
+		ArrayAdapter<String> adapter12 = new ArrayAdapter<String>(this,
+				R.layout.sss, ms.getCountry()[2]);
+		adapter12
+				.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		spinner12 = (Spinner) findViewById(R.id.spinner12);
+		spinner12.setAdapter(adapter12);
+		spinner12.setSelection(sPref.getInt("CITIZENSHIP", 0));
+		spinner12.setPrompt("Гражданство");
+		spinner12.setOnItemSelectedListener(new OnItemSelectedListener() {
+
+			@Override
+			public void onItemSelected(AdapterView<?> arg0, View arg1,
+					int arg2, long arg3) {
+				spinner13.setSelection(arg2);
+				
+			}
+
+			@Override
+			public void onNothingSelected(AdapterView<?> arg0) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
+
+		ArrayAdapter<String> adapter13 = new ArrayAdapter<String>(this,
+				R.layout.sss, ms.getCountry()[1]);
+		adapter13
+				.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		spinner13 = (Spinner) findViewById(R.id.spinner13);
+		spinner13.setAdapter(adapter13);
+		spinner13.setSelection(sPref.getInt("CITIZENSHIP", 0));
+		spinner13.setPrompt("Гражданство");
+		spinner13.setOnItemSelectedListener(new OnItemSelectedListener() {
+
+			@Override
+			public void onItemSelected(AdapterView<?> arg0, View arg1,
+					int arg2, long arg3) {
+				spinner12.setSelection(arg2);
+				
+			}
+
+			@Override
+			public void onNothingSelected(AdapterView<?> arg0) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
+
+		ArrayAdapter<String> adapter14 = new ArrayAdapter<String>(this,
+				R.layout.sss, ms.getMainDocument()[1]);
+		adapter14
+				.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		spinner14 = (Spinner) findViewById(R.id.spinner14);
+		spinner14.setAdapter(adapter14);
+		spinner14.setSelection(sPref.getInt("MAIN_DOCUMENT", 0));
+		spinner14.setPrompt("Основной документ");
+	}
+
+	@Override
+	public void onClick(View v) {
+		switch (v.getId()) {
+		case R.id.btn2:
+			sPref.edit().putInt("TYPE_AUTO", spinner.getSelectedItemPosition())
+					.commit();
+			sPref.edit().putInt("VECTOR", spinner2.getSelectedItemPosition())
+					.commit();
+			sPref.edit().putInt("COUNTRY", spinner3.getSelectedItemPosition())
+					.commit();
+			sPref.edit().putInt("TARGET", spinner5.getSelectedItemPosition())
+					.commit();
+			sPref.edit()
+					.putInt("TYPE_DOCUMENT", spinner8.getSelectedItemPosition())
+					.commit();
+			sPref.edit()
+					.putInt("TYPE_VISA", spinner10.getSelectedItemPosition())
+					.commit();
+			sPref.edit()
+					.putInt("KIND_VISA", spinner11.getSelectedItemPosition())
+					.commit();
+			sPref.edit()
+					.putInt("CITIZENSHIP", spinner12.getSelectedItemPosition())
+					.commit();
+			sPref.edit()
+					.putInt("MAIN_DOCUMENT",
+							spinner14.getSelectedItemPosition()).commit();
+			super.onBackPressed();
+			break;
+		case R.id.btn3:
+			super.onBackPressed();
+			break;
+		default:
+			break;
+		}
+
+	}
+}

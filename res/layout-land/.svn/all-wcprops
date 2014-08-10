@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/Bercut/!svn/ver/1025/trunk/Android/PARM_Controler/res/layout-land
+END
+pass_on_trip.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/Bercut/!svn/ver/1010/trunk/Android/PARM_Controler/res/layout-land/pass_on_trip.xml
+END
+settings.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/Bercut/!svn/ver/1010/trunk/Android/PARM_Controler/res/layout-land/settings.xml
+END
+checkpass.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/Bercut/!svn/ver/1010/trunk/Android/PARM_Controler/res/layout-land/checkpass.xml
+END
+main.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/Bercut/!svn/ver/1010/trunk/Android/PARM_Controler/res/layout-land/main.xml
+END
+pass_detail_main_data.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/Bercut/!svn/ver/1025/trunk/Android/PARM_Controler/res/layout-land/pass_detail_main_data.xml
+END
+pass_detail_pass_data.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/Bercut/!svn/ver/1023/trunk/Android/PARM_Controler/res/layout-land/pass_detail_pass_data.xml
+END
+mainform.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/Bercut/!svn/ver/1010/trunk/Android/PARM_Controler/res/layout-land/mainform.xml
+END
+pass_detail_dop_doc_data.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/Bercut/!svn/ver/1023/trunk/Android/PARM_Controler/res/layout-land/pass_detail_dop_doc_data.xml
+END
+dialog_chage_pass.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/Bercut/!svn/ver/1010/trunk/Android/PARM_Controler/res/layout-land/dialog_chage_pass.xml
+END
+pass_detail_main.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/Bercut/!svn/ver/1023/trunk/Android/PARM_Controler/res/layout-land/pass_detail_main.xml
+END
+dialog_add_server.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/Bercut/!svn/ver/1010/trunk/Android/PARM_Controler/res/layout-land/dialog_add_server.xml
+END
+trip.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/Bercut/!svn/ver/1010/trunk/Android/PARM_Controler/res/layout-land/trip.xml
+END

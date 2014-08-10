@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="#DBDBDB" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:text="  Данные по дополнительному документу"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LL_satings"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:text="Тип доп. док." />
+
+        <TextView
+            android:id="@+id/textViewTrip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="2dp"
+            android:background="#DBDBDB"
+            android:gravity="left" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LL_satings"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:text="Номер" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="2dp"
+            android:background="#DBDBDB"
+            android:gravity="left" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LL_satings"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:text="Вид визы" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="2dp"
+            android:background="#DBDBDB"
+            android:gravity="left" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LL_satings"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:text="Тип визы" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="2dp"
+            android:background="#DBDBDB"
+            android:gravity="left" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LL_satings"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:text="Орган выдачи" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="2dp"
+            android:background="#DBDBDB"
+            android:gravity="left" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LL_satings"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="right"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:gravity="left"
+            android:text="Начало" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:text="Окончание" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LL_satings"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="2dp"
+            android:background="#DBDBDB"
+            android:gravity="left" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="2dp"
+            android:background="#DBDBDB"
+            android:gravity="left" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LL_satings"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:text="Групповая" />
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

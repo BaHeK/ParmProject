@@ -1,0 +1,67 @@
+10
+
+dir
+1029
+https://vcs.todes.by:8443/svn/Bercut/trunk/Android/PARM_Controler/res
+https://vcs.todes.by:8443/svn/Bercut
+
+
+
+2013-10-07T13:08:57.842083Z
+1025
+a_bardonov
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0ce5085f-5c45-5846-b49d-61285f41837e
+
+values
+dir
+
+values-sw720dp-land
+dir
+
+values-sw600dp
+dir
+
+drawable-hdpi
+dir
+
+drawable-xxhdpi
+dir
+
+menu
+dir
+
+values-v11
+dir
+
+drawable-ldpi
+dir
+
+values-v14
+dir
+
+drawable-mdpi
+dir
+
+layout-land
+dir
+
+drawable-xhdpi
+dir
+
+layout
+dir
+

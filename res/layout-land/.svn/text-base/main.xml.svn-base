@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#42aaff"
+    android:gravity="left"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#42aaff"
+        android:gravity="left"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#42aaff"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="123dp"
+                android:layout_height="159dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/security_icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#42aaff"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/main_LL_rows"
+                android:layout_marginTop="20dp"
+                android:gravity="left" >
+
+                <TextView
+                    style="@style/labels"
+                    android:text="@string/Name" />
+
+                <EditText
+                    android:id="@+id/userName"
+                    style="@style/EditText_Text"
+                    android:hint="Имя"
+                    android:maxLength="20" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/main_LL_rows"
+                android:gravity="left" >
+
+                <TextView
+                    style="@style/labels"
+                    android:text="@string/Password" />
+
+                <EditText
+                    android:id="@+id/userPassword"
+                    style="@style/EditText_Text"
+                    android:hint="Пароль"
+                    android:inputType="textPassword"
+                    android:maxLength="15" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/main_LL_rows"
+                android:gravity="left" >
+
+                <TextView
+                    style="@style/labels"
+                    android:text="@string/PPR" />
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="fill" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/main_LL_rows"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    style="@style/labels"
+                    android:text="@string/Server" />
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="fill" />
+
+                <ImageButton
+                    android:id="@+id/imageButton1"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/greenplus" />
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/onebit_32" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/main_LL_rows"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:background="#7fc7ff"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btnChagePass"
+            style="@style/Button"
+            android:layout_marginRight="50dp"
+            android:text="@string/ChagePassword" />
+
+        <Button
+            android:id="@+id/btnOk"
+            style="@style/Button"
+            android:text="@string/Ok" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="@style/Button"
+            android:text="@string/Cancel" />
+    </LinearLayout>
+
+</LinearLayout>

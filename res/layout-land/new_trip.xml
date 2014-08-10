@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="right"
+    android:dividerPadding="@dimen/activity_vertical_margin"
+    android:gravity="top"
+    android:measureWithLargestChild="false"
+    android:orientation="vertical"
+    android:showDividers="beginning|none" >
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="#DBDBDB" >
+
+        <TextView
+            android:id="@+id/textViewTrip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:text="@string/EditTrip"
+            android:textSize="12sp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/LL_satings"
+        android:layout_width="match_parent"
+        android:layout_height="32dp" >
+
+        <LinearLayout
+            android:layout_width="72dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="left"
+            android:orientation="vertical" >
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonNumAuto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|bottom|left|right|center"
+            android:gravity="right"
+            android:text="Номер ТС"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/editTextNumAuto"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:inputType="text"
+            android:text="FFFFF"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+    
+     <LinearLayout
+         style="@style/LL_satings"
+         android:layout_width="match_parent"
+         android:layout_height="30dp" >
+
+         <TextView
+             android:id="@+id/textViewTrailerNum"
+             android:layout_width="160dp"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:gravity="right"
+             android:text="Номер прицепа" />
+
+         <EditText
+             android:id="@+id/editTextTrailerNum"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:inputType="text" />
+     </LinearLayout>
+    
+        <LinearLayout
+            style="@style/LL_satings"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" >
+
+        <TextView
+            android:id="@+id/textViewClasAuto"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:text="Класс ТС" />
+
+        <Spinner
+            android:id="@+id/spinnerClasAuto"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    
+        <LinearLayout
+            style="@style/LL_satings"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" >
+
+        <TextView
+            android:id="@+id/textViewTypeAuto"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:text="Тип ТС" />
+
+        <Spinner
+            android:id="@+id/spinnerTypeAuto"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    
+        <LinearLayout
+            style="@style/LL_satings"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" >
+
+        <TextView
+            android:id="@+id/textViewModelAuto"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:text="Марка ТС" />
+
+        <Spinner
+            android:id="@+id/spinnerModelAuto"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    
+           <LinearLayout
+               style="@style/LL_satings"
+               android:layout_width="match_parent"
+               android:layout_height="30dp" >
+
+         <TextView
+             android:id="@+id/textViewTrailerNum"
+             android:layout_width="160dp"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:gravity="right"
+             android:text="№ КТ" />
+
+         <EditText
+             android:id="@+id/editTextTrailerNum"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:inputType="text" />
+     </LinearLayout>
+
+        <LinearLayout
+            style="@style/LL_satings"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" >
+
+         <TextView
+             android:id="@+id/textViewTrailerNum"
+             android:layout_width="160dp"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:gravity="right"
+             android:text="Водитель" />
+
+         <EditText
+             android:id="@+id/editTextTrailerNum"
+             android:layout_width="156dp"
+             android:layout_height="wrap_content"
+             android:ellipsize="start"
+             android:freezesText="true"
+             android:includeFontPadding="true"
+             android:inputType="text"
+             android:scrollHorizontally="true"
+             android:selectAllOnFocus="false"
+             android:text="AAAAAA"
+             android:textAllCaps="false"
+             android:textSize="14sp" />
+         
+          <LinearLayout
+         style="@style/LL_satings"
+         android:layout_width="match_parent" >
+
+         <TextView
+             android:id="@+id/textViewTrailerNum"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:gravity="right"
+             android:text="Направление" />
+
+         <EditText
+             android:id="@+id/editTextTrailerNum"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:inputType="text"
+             android:text="112121"
+             android:textSize="12sp" />
+
+     </LinearLayout>
+         
+     </LinearLayout>
+ 
+        <LinearLayout
+        style="@style/LL_satings"
+        android:layout_width="match_parent" >
+
+        <TextView
+            android:id="@+id/textViewCountry"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:text="Принадлежность" />
+
+        <Spinner
+            android:id="@+id/spinnerCountry"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/spinnerCountry1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    
+           <LinearLayout
+        style="@style/LL_satings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DBDBDB"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btnClearTrip"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Очистить"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnCargoTrip"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="100dp"
+            android:gravity="center"
+            android:text="Груз"
+            android:textSize="12sp" />
+        
+                <Button
+            android:id="@+id/btnSaveTrip"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="100dp"
+            android:gravity="center"
+            android:text="Сохранить"
+            android:textSize="12sp" />
+      
+                
+           <Button
+            android:id="@+id/btnCancelTrip"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="100dp"
+            android:gravity="center"
+            android:text="Отмена"
+            android:textSize="12sp" />      
+      
+    </LinearLayout>
+    
+
+        
+</LinearLayout>
+
+    
